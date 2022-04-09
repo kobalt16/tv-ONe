@@ -1,0 +1,76 @@
+body {
+    background-color: #FED02D;
+    transition: 2.8s;
+
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10%;
+}
+.container {
+    top: 50%;
+    /* max-width: 466px;
+    max-height: 365px; */
+}
+
+#tv {
+    position: absolute;
+    z-index: 3;
+}
+#video {
+    width: 460px;
+    padding-top: 10px;
+}
+.pointer {
+    transition: transform ease-in-out .5s;
+    
+}
+.pointer:hover {
+    transition: .5s;
+    transform: scale(.9);
+}
+
+/* --------CheckBOX---------------------- */
+.switch {
+    position: absolute;
+    left: 50%;
+    top: 5%
+}
+
+.checkbox {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 20px;
+    background-color: rgb(4, 4, 35);
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1;
+    transition: ease-in .5s;
+}
+
+.check {
+    content: '';
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    background-color: #FED02D;
+    border-radius: 50px;
+    top: 2px;
+    left: 2px;
+    transform: translateX(120%);
+    transition: ease-in .3s;
+}
+.checkbox.onActive {
+    background-color: #FED02D;
+}
+.check.onActive {
+    transform: translateX(0%);
+    background-color: rgb(4, 4, 35);
+}
+body.onActive {
+    background-color: rgb(4, 4, 35);
+    transition: 2s;
+}
